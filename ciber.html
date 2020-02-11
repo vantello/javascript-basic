@@ -1,0 +1,80 @@
+<html>
+    <head></head>
+    <body>
+        
+        <script>
+            //Exercici 1. Mostrar "Hola món per linia de comandes."
+            console.log("Hola Mundo!");
+
+            //Exercici 2. Crear un alert que mostri el teu nom.
+            alert("¡Em dic Aleix!");
+
+            //Exercici 3. Crear una variable que contingui el teu nom i una altre que contingui el 
+            //cognom
+            var nom = "Aleix ";
+            var cognom = "Tello";
+            console.log(nom + cognom);
+
+            //Exercici 4. Crea dues variables amb dos números i fes una suma entre ells.
+            var num1 = 5;
+            var num2 = 6;
+            var suma = num1+num2;
+            console.log("La suma entre " + num1 + " i " + num2 + " és " + suma);
+
+            //Exercici 5. Crea una variable notaExamen juntament amb un alert que ens digui si l'examen
+            //ha estat aprovat o no juntament amb la nota.
+            var notaExamen = 5;
+            if (notaExamen < 5){
+                alert("Has tret un " + notaExamen + ". L'examen ha estat suspès");
+            }else{
+                alert("Has aprovat.");
+            }
+            //Exercici 6. Reemplaça la paraula blau per la paraula verd a la següent cadena de text
+            //Tinc un cotxe de color blau. Desprès intenta fer-ho remplaçant les o per les u.
+            var sentence = "Tinc un cotxe de color blau";
+            var substitute = sentence.replace("blau", "verd");
+            var subLetter = sentence.replace(/o/gi, "u");
+            console.log(substitute);
+            console.log(subLetter);
+
+            //Exercici 7. Donat el següent llistat d'objectes "taula", "cadira", "ordinador", "llibreta",
+            //per un bucle que mostri per pantalla cada objecte i la seva posició al llistat.
+            var objectes = new Array("taula", "cadira", "ordinador", "llibreta");
+            var i = 0;
+            for (i=0;i<objectes.length;i++){
+                console.log("L'objecte " + objectes[i] + " està a la posició " + (i+1) + ".");
+            }
+            
+            //Exercici 8.Crea una funció anomenada calculadora que tingui com a entrada els següents paràmetres:
+            //operador, valor1 i valor2. Ha de sumar, restar i multiplicar. El resultat haurà de ser mostrar
+            //per pantalla
+                
+            function calculadora(operador,num1,num2){
+                //var operador = prompt("Introdueix l'operador:");
+                //var num1     = prompt("Introdueix el primer nombre:");
+                //var num2     = prompt("Introdueix el segon nombre:");
+                var resultat;
+                switch(operador){
+                    case "x":
+                        resultat = num1*num2;
+                        console.log(resultat);
+                        break;
+                    case "+":
+                        resultat = num1+num2;
+                        console.log(resultat);
+                        break;
+                    case "-":
+                        resultat = num1-num2;
+                        console.log(resultat);
+                        break;
+                    default:
+                        alert("No has introduït un operador vàlid.");
+                }
+            }
+            calculadora("+",5,5);
+            calculadora("x",5,5);
+            calculadora("-",5,5);
+        </script>
+        
+    </body>
+</html>
