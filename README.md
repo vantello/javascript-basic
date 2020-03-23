@@ -1,4 +1,4 @@
-BASCI JAVASCRIPT
+BASIC JAVASCRIPT
 
 Basic aplicattion to practice arrays, arrays methods and some diferent Javascript stuff. | IT ACADEMY
 
